@@ -8,19 +8,23 @@
     ".NETCoreApp,Version=v3.1": []
   },
   "packageFolders": {
-    "C:\\Users\\guill\\.nuget\\packages\\": {}
+    "C:\\Users\\Santiago\\.nuget\\packages\\": {},
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\guill\\Source\\Repos\\ObligaP2\\ObligatorioP2Dominio\\ObligatorioP2Dominio.csproj",
+      "projectUniqueName": "C:\\Users\\Santiago\\Source\\Repos\\ObligaP21.0\\ObligatorioP2Dominio\\ObligatorioP2Dominio.csproj",
       "projectName": "ObligatorioP2Dominio",
-      "projectPath": "C:\\Users\\guill\\Source\\Repos\\ObligaP2\\ObligatorioP2Dominio\\ObligatorioP2Dominio.csproj",
-      "packagesPath": "C:\\Users\\guill\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\guill\\Source\\Repos\\ObligaP2\\ObligatorioP2Dominio\\obj\\",
+      "projectPath": "C:\\Users\\Santiago\\Source\\Repos\\ObligaP21.0\\ObligatorioP2Dominio\\ObligatorioP2Dominio.csproj",
+      "packagesPath": "C:\\Users\\Santiago\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Santiago\\Source\\Repos\\ObligaP21.0\\ObligatorioP2Dominio\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+      ],
       "configFilePaths": [
-        "C:\\Users\\guill\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Santiago\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [

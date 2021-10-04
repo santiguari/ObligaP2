@@ -204,7 +204,7 @@ namespace ObligatorioP2Dominio
             if (NuevoValorAforoMaximo > 0 && Cerrado.AforoMaximo != NuevoValorAforoMaximo)
             {
                 Cerrado.AforoMaximo = NuevoValorAforoMaximo;
-                nuevoAforo = "El nuevo aforo maximo para el lugar cerrado es " + Cerrado.AforoMaximo;
+                nuevoAforo = "El nuevo aforo maximo para el lugar abierto es " + Cerrado.AforoMaximo;
             }
             return nuevoAforo;
 
