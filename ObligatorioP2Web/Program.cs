@@ -24,7 +24,7 @@ namespace ObligatorioP2Web
         static void MostrarMenu()
         {
             Console.WriteLine("1-Mostrar Actividades");
-            Console.WriteLine("1-Mostrar Actividades");
+            Console.WriteLine("2-Mostrar Actividades para todo publico");
             Console.WriteLine("0-Salir");
         }
 
@@ -34,8 +34,10 @@ namespace ObligatorioP2Web
             {
                 case 1:
                     Console.WriteLine(miSistema.MostrarActividades());
+                    break;
+                case 2:
+                    Console.WriteLine(miSistema.MostrarActividadesTodoPublico());
                     Console.ReadKey();
-
                     break;
                 default:
                     Console.Clear();

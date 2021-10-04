@@ -75,7 +75,7 @@ namespace ObligatorioP2Dominio
         {
             Categoria categoriaBuscada = null;
             int i = 0;
-            while (i < categorias.Count && categoriaBuscada == null)
+            while (i<categorias.Count && categoriaBuscada == null)
             {
                 if (categorias[i].Nombre == nombre)
                 {
@@ -102,9 +102,8 @@ namespace ObligatorioP2Dominio
                     { //Verifico que el dato categoria q me pasaron sea categoria y sea false
 
                         Lugar miLugar = ExisteLugar(IdLugar); //idem categoria
-                        if (miLugar != null)
+                        if (miLugar == null)
                         {
-
                             Actividad unaActividad = new Actividad(nombre, miCategoria, miLugar, EdadMinina, cantidadLike);
 
                             actividades.Add(unaActividad);
@@ -162,7 +161,7 @@ namespace ObligatorioP2Dominio
             Lugar lugarBuscado = null;
             int i = 0;
 
-            while (i < lugares.Count && lugarBuscado == null)
+            while (i<lugares.Count && lugarBuscado == null)
             {
                 if (lugares[i].Id == id)
                 {

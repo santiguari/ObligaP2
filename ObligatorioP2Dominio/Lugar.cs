@@ -25,5 +25,6 @@ namespace ObligatorioP2Dominio
         {
             get { return this.nombre; }
         }
+
     }
 }

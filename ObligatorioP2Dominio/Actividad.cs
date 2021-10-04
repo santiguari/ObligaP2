@@ -52,7 +52,11 @@ namespace ObligatorioP2Dominio
             this.edadMinima = edadMinima;
             this.cantidadLike = cantidadLike;
         }
-      
+
+        public override string ToString()
+        {
+            return this.nombre + "-" + this.fechaHora + "-" + this.lugar + "-" + this.edadMinima + "-" + this.cantidadLike;
+        }
 
     }
 }
