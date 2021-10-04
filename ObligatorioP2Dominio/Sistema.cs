@@ -204,7 +204,7 @@ namespace ObligatorioP2Dominio
             if (NuevoValorAforoMaximo > 0 && Cerrado.AforoMaximo != NuevoValorAforoMaximo)
             {
                 Cerrado.AforoMaximo = NuevoValorAforoMaximo;
-                nuevoAforo = "El nuevo aforo maximo para el lugar cerrado es" + Cerrado.AforoMaximo;
+                nuevoAforo = "El nuevo aforo maximo para el lugar cerrado es " + Cerrado.AforoMaximo;
             }
             return nuevoAforo;
 
@@ -215,7 +215,7 @@ namespace ObligatorioP2Dominio
             if (NuevoPrecioButaca > 0 && Abierto.PrecioButaca != NuevoPrecioButaca)
             {
                 Abierto.PrecioButaca = NuevoPrecioButaca;
-                NuevoPrecio = "El nuevo precio de la butaca se ha cambiado con exito y ahora es " + Abierto.PrecioButaca;
+                NuevoPrecio = "El nuevo precio de la butaca se ha cambiado con exito y ahora es $" + Abierto.PrecioButaca;
             }
             return NuevoPrecio;
         }
@@ -236,7 +236,7 @@ namespace ObligatorioP2Dominio
 
                             if (actividades[i].Fecha >= FechaInicio && actividades[i].Fecha <= FechaFin)
                             {
-                                ListaActividades += actividades[i] + "/n";
+                                ListaActividades += actividades[i] + "\n";
                             }
                         }
 
