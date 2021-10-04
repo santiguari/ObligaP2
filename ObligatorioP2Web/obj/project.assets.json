@@ -27,23 +27,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Santiago\\.nuget\\packages\\": {},
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+    "C:\\Users\\guill\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Santiago\\Source\\Repos\\ObligaP2021\\ObligatorioP2Web\\ObligatorioP2Web.csproj",
+      "projectUniqueName": "C:\\Users\\guill\\Source\\Repos\\ObligaP2\\ObligatorioP2Web\\ObligatorioP2Web.csproj",
       "projectName": "ObligatorioP2Web",
-      "projectPath": "C:\\Users\\Santiago\\Source\\Repos\\ObligaP2021\\ObligatorioP2Web\\ObligatorioP2Web.csproj",
-      "packagesPath": "C:\\Users\\Santiago\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Santiago\\Source\\Repos\\ObligaP2021\\ObligatorioP2Web\\obj\\",
+      "projectPath": "C:\\Users\\guill\\Source\\Repos\\ObligaP2\\ObligatorioP2Web\\ObligatorioP2Web.csproj",
+      "packagesPath": "C:\\Users\\guill\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\guill\\Source\\Repos\\ObligaP2\\ObligatorioP2Web\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-      ],
       "configFilePaths": [
-        "C:\\Users\\Santiago\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\guill\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -57,8 +53,8 @@
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
           "projectReferences": {
-            "C:\\Users\\Santiago\\Source\\Repos\\ObligaP2021\\ObligatorioP2Dominio\\ObligatorioP2Dominio.csproj": {
-              "projectPath": "C:\\Users\\Santiago\\Source\\Repos\\ObligaP2021\\ObligatorioP2Dominio\\ObligatorioP2Dominio.csproj"
+            "C:\\Users\\guill\\Source\\Repos\\ObligaP2\\ObligatorioP2Dominio\\ObligatorioP2Dominio.csproj": {
+              "projectPath": "C:\\Users\\guill\\Source\\Repos\\ObligaP2\\ObligatorioP2Dominio\\ObligatorioP2Dominio.csproj"
             }
           }
         }
