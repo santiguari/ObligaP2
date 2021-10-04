@@ -24,7 +24,10 @@ namespace ObligatorioP2Web
         static void MostrarMenu()
         {
             Console.WriteLine("1-Mostrar Actividades");
-            Console.WriteLine("2-Mostrar Actividades para todo publico");
+            Console.WriteLine("2-Cambiar valor del aforo máximo");
+            Console.WriteLine("3-Cambiar precio de butacas en lugares abiertos");
+            Console.WriteLine("4-Mostrar Actividades por categoria y fecha");
+            Console.WriteLine("5-Mostrar Actividades para todo publico");
             Console.WriteLine("0-Salir");
         }
 
@@ -36,6 +39,49 @@ namespace ObligatorioP2Web
                     Console.WriteLine(miSistema.MostrarActividades());
                     break;
                 case 2:
+                    Console.WriteLine("Ingrese el nuevo valor del aforo máximo");
+                    int.TryParse(Console.ReadLine(), out int nuevoAforoMaximo);
+                    if (nuevoAforoMaximo > 0)
+                    {
+                        Console.WriteLine(miSistema.CambiarAforoMaximo(nuevoAforoMaximo));
+                    }
+                    else
+                    {
+                        Console.WriteLine("El valor ingresado no es correcto");
+                    }
+                    Console.ReadKey();
+                    break;
+                case 3:
+                    Console.WriteLine("Ingrese el nuevo precio por butaca en lugares abiertos");
+                    decimal.TryParse(Console.ReadLine(), out decimal nuevoPrecio);
+                    if (nuevoPrecio > 0)
+                    {
+                        Console.WriteLine(miSistema.CambiarPrecioButaca(nuevoPrecio));
+                    }
+                    else
+                    {
+                        Console.WriteLine("El valor ingresado no es correcto");
+                    }
+                    Console.ReadKey();
+                    break;
+                case 4:
+                    Console.WriteLine("Ingrese una categoria");
+                    string nombreCategoria = Console.ReadLine();
+                    Console.WriteLine("Ingrese fecha inicial");
+                    DateTime.TryParse(Console.ReadLine(), out DateTime fechaDesde);
+                    Console.WriteLine("Ingrese fecha final");
+                    DateTime.TryParse(Console.ReadLine(), out DateTime fechaHasta);
+                    if (fechaDesde > DateTime.MinValue && fechaHasta > DateTime.MinValue)
+                    {
+                        Console.WriteLine(miSistema.ListarActividadesDeCategoria(nombreCategoria, fechaDesde, fechaHasta));
+                    }
+                    else
+                    {
+                        Console.WriteLine("Los datos no son correctos");
+                    }
+                    Console.ReadKey();
+                    break;
+                case 5:
                     Console.WriteLine(miSistema.MostrarActividadesTodoPublico());
                     Console.ReadKey();
                     break;
