@@ -24,6 +24,7 @@ namespace ObligatorioP2Web
         static void MostrarMenu()
         {
             Console.WriteLine("1-Mostrar Actividades");
+            Console.WriteLine("1-Mostrar Actividades");
             Console.WriteLine("0-Salir");
         }
 
