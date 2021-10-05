@@ -38,3 +38,13 @@ C:\Users\Santiago\Source\Repos\ObligaP21.0\ObligatorioP2Dominio\obj\Debug\netcor
 C:\Users\Santiago\Source\Repos\ObligaP21.0\ObligatorioP2Dominio\obj\Debug\netcoreapp3.1\ObligatorioP2Dominio.csproj.CoreCompileInputs.cache
 C:\Users\Santiago\Source\Repos\ObligaP21.0\ObligatorioP2Dominio\obj\Debug\netcoreapp3.1\ObligatorioP2Dominio.dll
 C:\Users\Santiago\Source\Repos\ObligaP21.0\ObligatorioP2Dominio\obj\Debug\netcoreapp3.1\ObligatorioP2Dominio.pdb
+C:\Users\guill\Source\Repos\ObligaP22326\ObligatorioP2Dominio\bin\Debug\netcoreapp3.1\ObligatorioP2Dominio.deps.json
+C:\Users\guill\Source\Repos\ObligaP22326\ObligatorioP2Dominio\bin\Debug\netcoreapp3.1\ObligatorioP2Dominio.dll
+C:\Users\guill\Source\Repos\ObligaP22326\ObligatorioP2Dominio\bin\Debug\netcoreapp3.1\ObligatorioP2Dominio.pdb
+C:\Users\guill\Source\Repos\ObligaP22326\ObligatorioP2Dominio\obj\Debug\netcoreapp3.1\ObligatorioP2Dominio.csproj.AssemblyReference.cache
+C:\Users\guill\Source\Repos\ObligaP22326\ObligatorioP2Dominio\obj\Debug\netcoreapp3.1\ObligatorioP2Dominio.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\guill\Source\Repos\ObligaP22326\ObligatorioP2Dominio\obj\Debug\netcoreapp3.1\ObligatorioP2Dominio.AssemblyInfoInputs.cache
+C:\Users\guill\Source\Repos\ObligaP22326\ObligatorioP2Dominio\obj\Debug\netcoreapp3.1\ObligatorioP2Dominio.AssemblyInfo.cs
+C:\Users\guill\Source\Repos\ObligaP22326\ObligatorioP2Dominio\obj\Debug\netcoreapp3.1\ObligatorioP2Dominio.csproj.CoreCompileInputs.cache
+C:\Users\guill\Source\Repos\ObligaP22326\ObligatorioP2Dominio\obj\Debug\netcoreapp3.1\ObligatorioP2Dominio.dll
+C:\Users\guill\Source\Repos\ObligaP22326\ObligatorioP2Dominio\obj\Debug\netcoreapp3.1\ObligatorioP2Dominio.pdb

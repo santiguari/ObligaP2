@@ -17,9 +17,10 @@ namespace ObligatorioP2Dominio
         public Sistema()
         {
             PrecargaCategorias();
-            PrecargaActividades();
             PrecargaLugarAbierto();
             PrecargaLugaresCerrados();
+            PrecargaActividades();
+            
 
         }
 
@@ -31,7 +32,19 @@ namespace ObligatorioP2Dominio
             this.AltaCategorias("Corporativo", "Evento gastronomico de degustacion");
             this.AltaCategorias("Feria Gastronomica", "Evento gastronomico de degustacion");
         }
+        private void PrecargaLugarAbierto()
+        {
+            this.AltaLugaresAbiertos(1, "Estadio Centenario", 10000);
+            this.AltaLugaresAbiertos(2, "Teatro de verano", 3000);
+            this.AltaLugaresAbiertos(3, "Estadio Penarol", 9000);
+        }
 
+        private void PrecargaLugaresCerrados()
+        {
+            this.AltaLugaresCerrados(4, "Kibon Avanza", 2000, true, 5000);
+            this.AltaLugaresCerrados(5, "Antel Arena", 9000, true, 11000);
+            this.AltaLugaresCerrados(6, "Latu", 4500, false, 5000);
+        }
 
         private void PrecargaActividades()   /*Ref 1. Estadio Centenario 2.Teatro de verano 3.Estadio penarol
                                                4.Kibon Avanza 5.Antel Arena 6. Latu*/
@@ -47,19 +60,7 @@ namespace ObligatorioP2Dominio
             this.altaActividad("Clasico Uruguayo Benefico", "Deportivo", 3, "C20", 1000);
             this.altaActividad("Food Day", "Feria Gastronomica", 2, "P", 900);
         }
-        private void PrecargaLugarAbierto()
-        {
-            this.AltaLugaresAbiertos(1, "Estadio Centenario", 10000);
-            this.AltaLugaresAbiertos(2, "Teatro de verano", 3000);
-            this.AltaLugaresAbiertos(3, "Estadio Penarol", 9000);
-        }
-
-        private void PrecargaLugaresCerrados()
-        {
-            this.AltaLugaresCerrados(4, "Kibon Avanza", 2000, true, 5000);
-            this.AltaLugaresCerrados(5, "Antel Arena", 9000, true, 11000);
-            this.AltaLugaresCerrados(6, "Latu", 4500, false, 5000);
-        }
+    
 
 
         public void AltaCategorias(string nombre, string descripcion)
@@ -102,7 +103,7 @@ namespace ObligatorioP2Dominio
                     { //Verifico que el dato categoria q me pasaron sea categoria y sea false
 
                         Lugar miLugar = ExisteLugar(IdLugar); //idem categoria
-                        if (miLugar == null)
+                        if (miLugar != null)
                         {
                             Actividad unaActividad = new Actividad(nombre, miCategoria, miLugar, EdadMinina, cantidadLike);
 
