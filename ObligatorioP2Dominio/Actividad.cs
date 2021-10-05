@@ -55,7 +55,7 @@ namespace ObligatorioP2Dominio
 
         public override string ToString()
         {
-            return this.nombre + "-" + this.fechaHora + "-" + this.lugar + "-" + this.edadMinima + "-" + this.cantidadLike;
+            return this.nombre + " - "+ this.categoria + " - " + this.fechaHora + " - " + this.lugar + " - " + this.edadMinima + " - " + this.cantidadLike;
         }
 
     }

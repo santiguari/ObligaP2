@@ -25,6 +25,11 @@ namespace ObligatorioP2Dominio
         {
             get { return this.nombre; }
         }
+        public override string ToString()
+        {
+            return this.nombre;
+           
+        }
 
     }
 }

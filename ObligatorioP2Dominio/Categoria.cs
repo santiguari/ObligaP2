@@ -20,6 +20,9 @@ namespace ObligatorioP2Dominio
             this.nombre = nombre;
             this.descripcion = descripcion;
         }
-
+        public override string ToString()
+        {
+            return this.nombre;
+        }
     }
 }

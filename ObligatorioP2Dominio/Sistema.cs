@@ -221,30 +221,28 @@ namespace ObligatorioP2Dominio
             return NuevoPrecio;
         }
 
-        public string ListarActividadesDeCategoria(string nombreCategoria, DateTime FechaInicio, DateTime FechaFin)
+        string ListarActividadesDeCategoria(string nombreCategoria, DateTime FechaInicio, DateTime FechaFin)
         {
             string ListaActividades = "";
             FechaFin = FechaFin.AddDays(1);
+            int i = 0;
 
-            foreach (Categoria MiCategoria in categorias)
-                if (MiCategoria.Nombre == nombreCategoria)
+            while (i<categorias.Count && ExisteCategoria(nombreCategoria) != null)
+            {
+                if (categorias[i].Nombre == nombreCategoria)
                 {
-
-                    if (ExisteCategoria(nombreCategoria) != null)
+                   foreach(Actividad miActividad in actividades)
                     {
-                        for (int i = 0; i < actividades.Count; i++)
+                        if(miActividad.Fecha >= FechaInicio && miActividad.Fecha < FechaFin)
                         {
-
-                            if (actividades[i].Fecha >= FechaInicio && actividades[i].Fecha <= FechaFin)
-                            {
-                                ListaActividades += actividades[i] + "\n";
-                            }
+                            ListaActividades += miActividad;
                         }
-
+                        
                     }
                 }
+                i++;
+            }
             return ListaActividades;
-
         }
 
     }
