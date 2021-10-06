@@ -23,12 +23,13 @@ namespace ObligatorioP2Web
 
         static void MostrarMenu()
         {
+            Console.WriteLine("-------Menú de Actividades-------" + "\n");
             Console.WriteLine("1-Mostrar Actividades");
             Console.WriteLine("2-Cambiar valor del aforo máximo");
             Console.WriteLine("3-Cambiar precio de butacas en lugares abiertos");
             Console.WriteLine("4-Mostrar Actividades por categoria y fecha");
             Console.WriteLine("5-Mostrar Actividades para todo publico");
-            Console.WriteLine("0-Salir");
+            Console.WriteLine("0-Salir" + "\n");
         }
 
         static void VerificarOpcion(int opcion)

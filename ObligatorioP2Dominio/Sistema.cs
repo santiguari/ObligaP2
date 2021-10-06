@@ -221,28 +221,31 @@ namespace ObligatorioP2Dominio
             return NuevoPrecio;
         }
 
-        string ListarActividadesDeCategoria(string nombreCategoria, DateTime FechaInicio, DateTime FechaFin)
+        public string ListarActividadesDeCategoria(string nombreCategoria, DateTime FechaInicio, DateTime FechaFin)
         {
             string ListaActividades = "";
             FechaFin = FechaFin.AddDays(1);
-            int i = 0;
 
-            while (i<categorias.Count && ExisteCategoria(nombreCategoria) != null)
-            {
-                if (categorias[i].Nombre == nombreCategoria)
+            foreach (Categoria MiCategoria in categorias)
+                if (MiCategoria.Nombre == nombreCategoria)
                 {
-                   foreach(Actividad miActividad in actividades)
+
+                    if (ExisteCategoria(nombreCategoria) != null)
                     {
-                        if(miActividad.Fecha >= FechaInicio && miActividad.Fecha < FechaFin)
+                        for (int i = 0; i < actividades.Count; i++)
                         {
-                            ListaActividades += miActividad;
+                            if (actividades[i].Categoria.ToString() == nombreCategoria)                            //Utilizamos el ToString en el objeto Categoria para poder hacer la comparación con el parametro 
+                            {                                                                                     //pasado en el metodo, ya que dentro de la clase categoria habiamos realizado un override utilizando 
+                                if (actividades[i].Fecha >= FechaInicio && actividades[i].Fecha <= FechaFin)     //solo el atributo nombre para que se muestre en el objeto Categoria.
+                                {
+                                    ListaActividades += actividades[i] + "\n";
+                                }
+                            }
                         }
-                        
                     }
                 }
-                i++;
-            }
             return ListaActividades;
+
         }
 
     }
