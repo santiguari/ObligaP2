@@ -13,7 +13,7 @@ namespace ObligatorioP2Web
             while (opcion != 0)
             {
                 MostrarMenu();
-                Console.WriteLine("Ingrese opción de menú" + "\n");
+                Console.WriteLine("Ingrese opción de menú");
                 int.TryParse(Console.ReadLine(), out opcion);
                 VerificarOpcion(opcion) ;
             }
@@ -23,7 +23,7 @@ namespace ObligatorioP2Web
 
         static void MostrarMenu()
         {
-            Console.WriteLine("-------Menú de Actividades-------" + "\n");
+            Console.WriteLine("\n" +"▒▒▒▒▒▒▒▒▒▒▒▒▒ Menú de Actividades ▒▒▒▒▒▒▒▒▒▒▒▒▒" + "\n");
             Console.WriteLine("1-Mostrar Actividades");
             Console.WriteLine("2-Cambiar valor del aforo máximo");
             Console.WriteLine("3-Cambiar precio de butacas en lugares abiertos");
@@ -40,7 +40,7 @@ namespace ObligatorioP2Web
                     Console.WriteLine(miSistema.MostrarActividades());
                     break;
                 case 2:
-                    Console.WriteLine("Ingrese el nuevo valor del aforo máximo");
+                    Console.WriteLine("\n" + "Ingrese el nuevo valor del aforo máximo");
                     int.TryParse(Console.ReadLine(), out int nuevoAforoMaximo);
                     if (nuevoAforoMaximo > 0)
                     {
@@ -48,12 +48,12 @@ namespace ObligatorioP2Web
                     }
                     else
                     {
-                        Console.WriteLine("El valor ingresado no es correcto");
+                        Console.WriteLine("\n" + "El valor ingresado no es correcto");
                     }
                     Console.ReadKey();
                     break;
                 case 3:
-                    Console.WriteLine("Ingrese el nuevo precio por butaca en lugares abiertos");
+                    Console.WriteLine("\n" + "Ingrese el nuevo precio por butaca en lugares abiertos");
                     decimal.TryParse(Console.ReadLine(), out decimal nuevoPrecio);
                     if (nuevoPrecio > 0)
                     {
@@ -61,12 +61,12 @@ namespace ObligatorioP2Web
                     }
                     else
                     {
-                        Console.WriteLine("El valor ingresado no es correcto");
+                        Console.WriteLine("\n" + "El valor ingresado no es correcto");
                     }
                     Console.ReadKey();
                     break;
                 case 4:
-                    Console.WriteLine("Ingrese una categoria");
+                    Console.WriteLine("\n" + "Ingrese una categoria");
                     string nombreCategoria = Console.ReadLine();
                     Console.WriteLine("Ingrese fecha inicial");
                     DateTime.TryParse(Console.ReadLine(), out DateTime fechaDesde);
@@ -78,7 +78,7 @@ namespace ObligatorioP2Web
                     }
                     else
                     {
-                        Console.WriteLine("Los datos no son correctos");
+                        Console.WriteLine("\n" + "Los datos no son correctos");
                     }
                     Console.ReadKey();
                     break;
