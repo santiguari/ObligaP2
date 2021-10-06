@@ -55,7 +55,7 @@ namespace ObligatorioP2Dominio
 
         public override string ToString()
         {
-            return "\n" + "Actividad: " + this.nombre + "\n" + "Fecha y hora: " + this.fechaHora + "\n" + "Lugar: " + this.lugar + "\n" + "Edad mininma: " + this.edadMinima + "\n" + "Cantidad de likes: " + this.cantidadLike + "\n" + "Categoria: " + this.categoria;
+            return "\n" + "Actividad: " + this.nombre + "\n" + "Fecha y hora: " + this.fechaHora + "\n" + "Lugar: " + this.lugar + "\n" + "Edad mininma: " + this.edadMinima + "\n" + "Cantidad de likes: " + this.cantidadLike + "\n" + "Categoria: " + this.categoria + "\n"+ "\n" + "=======================================";
         }
 
     }

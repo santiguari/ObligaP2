@@ -13,9 +13,9 @@ namespace ObligatorioP2Web
             while (opcion != 0)
             {
                 MostrarMenu();
-                Console.WriteLine("Ingrese opción de menú");
+                Console.WriteLine("Ingrese opción de menú" + "\n");
                 int.TryParse(Console.ReadLine(), out opcion);
-                VerificarOpcion(opcion);
+                VerificarOpcion(opcion) ;
             }
 
             Console.ReadKey();
