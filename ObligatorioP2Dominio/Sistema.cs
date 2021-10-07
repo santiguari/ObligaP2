@@ -61,8 +61,6 @@ namespace ObligatorioP2Dominio
             this.altaActividad("Food Day", "Feria Gastronomica", 2, "P", 900);
         }
     
-
-
         public void AltaCategorias(string nombre, string descripcion)
         {
             if (nombre != "" && descripcion != "" && ExisteCategoria(nombre) == null)
@@ -98,17 +96,16 @@ namespace ObligatorioP2Dominio
             {
                 if (!ExisteActividad(nombre))
                 {
-                    Categoria miCategoria = ExisteCategoria(NombreCategoria);//creo un variable con el dato nombrecategoria para acceder al metodo existe
+                    Categoria miCategoria = ExisteCategoria(NombreCategoria);//Valido que la categoria obtenida exista en la lista
                     if (miCategoria != null)
-                    { //Verifico que el dato categoria q me pasaron sea categoria y sea false
-
+                    { 
                         Lugar miLugar = ExisteLugar(IdLugar); //idem categoria
                         if (miLugar != null)
                         {
                             Actividad unaActividad = new Actividad(nombre, miCategoria, miLugar, EdadMinina, cantidadLike);
 
                             actividades.Add(unaActividad);
-                        }//Ahora tengo que ir a armar el metodo constructor a la clase Actividad ->
+                        }
                     }
                 }
             }
@@ -182,6 +179,8 @@ namespace ObligatorioP2Dominio
             return miActividad;
         }
 
+        //*Este metodo recorre la lista de objetos de actividades y lo imprime en consola filtrando segun el 
+        //atributo EdadMinima siendo igual a "P" correspondiendo a Apto para todo publico*/
         public string MostrarActividadesTodoPublico()
         {
             string miActividadTP = "";
@@ -194,10 +193,8 @@ namespace ObligatorioP2Dominio
             }
             return miActividadTP;
         }
-        //eso de la ubicacion que dijiste puede ser, Gravedad	Código	Descripción	Proyecto	Archivo	Línea	Estado suprimido
-        //Obligatorio2021.dll este archivo tiene que estar en la carpeta netcoreapp3.1 de la carpeta del proyecto
-        // 'C:\Users\guill\OneDrive\Escritorio\Programación 2\Obligatorio2021\ObligatorioDominio\bin\Debug\netcoreapp3.1\Obligatorio2021.dll'			1	
 
+        //Este metodo obtiene el valor deseado por el ususario para determinar el valor del aforo maximo.
         public string CambiarAforoMaximo(int NuevoValorAforoMaximo)
         {
             string nuevoAforo = "";
@@ -209,6 +206,9 @@ namespace ObligatorioP2Dominio
             return nuevoAforo;
 
         }
+
+        //Este metodo obtiene el valor deseado por el ususario para determinar el nuevo valor de las butacas en los lugares abiertos.
+
         public string CambiarPrecioButaca(decimal NuevoPrecioButaca)
         {
             string NuevoPrecio = "";
@@ -220,6 +220,9 @@ namespace ObligatorioP2Dominio
             return NuevoPrecio;
         }
 
+
+        //Este metodo recorre la lista de objetos de actividades y lo imprime en consola filtrando segun el 
+        //el nombre de categoria, la fecha desde y la fecha hasta que el usuario determine en la intefaz. 
         public string ListarActividadesDeCategoria(string nombreCategoria, DateTime FechaInicio, DateTime FechaFin)
         {
             string ListaActividades = "";
