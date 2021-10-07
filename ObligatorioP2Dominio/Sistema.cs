@@ -18,7 +18,7 @@ namespace ObligatorioP2Dominio
         {
             PrecargaCategorias();
             PrecargaLugarAbierto();
-            PrecargaLugaresCerrados();
+            PrecargaLugarCerrado();
             PrecargaActividades();
             
 
@@ -39,7 +39,7 @@ namespace ObligatorioP2Dominio
             this.AltaLugaresAbiertos(3, "Estadio Penarol", 9000);
         }
 
-        private void PrecargaLugaresCerrados()
+        private void PrecargaLugarCerrado()
         {
             this.AltaLugaresCerrados(4, "Kibon Avanza", 2000, true, 5000);
             this.AltaLugaresCerrados(5, "Antel Arena", 9000, true, 11000);
@@ -71,7 +71,7 @@ namespace ObligatorioP2Dominio
                 categorias.Add(unaCategoria);
             }
         }
-
+        
         private Categoria ExisteCategoria(string nombre)
         {
             Categoria categoriaBuscada = null;
@@ -136,14 +136,13 @@ namespace ObligatorioP2Dominio
         {
             if (idLugar > 0 && nombre != "" && dimensiones > 0)
             {
-                /*Abierto unLugar = ExisteLugar(idLugar);
-                if (unLugar!=null && unLugar is Abierto)  
-                {*/ //No tiene sentido validar porque no me estan pasando un objeto por parametro
+                if (ExisteLugar(idLugar) == null)
+                {
 
-                Abierto unLugarAbierto = new Abierto(idLugar, nombre, dimensiones);
-                this.lugares.Add(unLugarAbierto);
+                    Abierto unLugarAbierto = new Abierto(idLugar, nombre, dimensiones);
+                    this.lugares.Add(unLugarAbierto);
+                }
             }
-
         }
         private void AltaLugaresCerrados(int idLugar, string nombre, decimal dimensiones, bool accesibilidad, decimal valorMantenimiento)//Duda si el aforo maximo es estatico
         {
@@ -172,7 +171,7 @@ namespace ObligatorioP2Dominio
             }
             return lugarBuscado;
         }
-
+        /*Este metodo recorre la lista de objetos de actividades y lo imprime en consola*/
         public string MostrarActividades()
         {
             string miActividad = "";
